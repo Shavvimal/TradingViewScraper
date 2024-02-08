@@ -67,6 +67,14 @@ SELECT create_hypertable('candles_tv', 'dt');
 python app/main.py
 ```
 
+The scraper will fetch the data and save it to the PostgreSQL database. You can monitor the progress in the terminal:
+
+![Terminal](/img/terminal.png)
+
+5. As a result, you will see the historical minute candles for the top 100 Market Cap Cryptocurrencies in the `candles_tv` table in the database:
+
+![Candle Data in PostgreSQL](/img/image.png)
+
 ## Usage
 
 1. **Initialize the Scraper**: Create an instance of `TradingViewScraper` with optional TradingView credentials for logged-in access.
